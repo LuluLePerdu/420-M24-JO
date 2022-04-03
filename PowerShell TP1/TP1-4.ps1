@@ -1,4 +1,9 @@
-$choix = Read-Host -Prompt "Combien d'elements? "
+<#
+Description : Ajoute dans un array (choix), un nombre aléatoire et vérifie si un processus est lié à cette id, nous renvoie si oui ou non.
+Auteur : Ludwig-Emmanuel Dufour
+#> 
+
+$choix = Read-Host -Prompt "Combien d'élements? "
 $tab = @()
 for($i = 0; $i -lt $choix; $i++){
     $tab += Get-Random -Maximum 65536
@@ -12,10 +17,10 @@ foreach($elem in $tab){
         }
     }
     if($found -ne "aucun"){
-        Write-Host("$elem, $found a ce numero ")
+        Write-Host("$elem, $found à ce numero ")
     } 
     else {
-        Write-Host("$elem, aucun processus a ce numero")    
+        Write-Host("$elem, aucun processus n'a ce numéro")    
     }
 }
 pause
