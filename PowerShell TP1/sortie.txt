@@ -1,0 +1,6 @@
+help.ps1:
+C:\Users\Ludwi\OneDrive\Bureau\TP1-Systeme\PowerShell TP1\help.ps1
+C:\Users\Ludwi\OneDrive\Bureau\TP1-Systeme\PowerShell TP1\TP1-3 help.ps1
+C:\Users\Ludwi\OneDrive\Bureau\TP1-Systeme\PowerShell TP1\TP1-4 help.ps1
+....
+
