@@ -1,4 +1,6 @@
 #!/bin/bash
+#Description : Rechercher dans le répertoire présent et les enfants, les fichiers ayant le même nom et les indiquer dans un fichier sortie.
+#Auteur : Ludwig-Emmanuel Dufour
 
 > sortie.txt
 for u in $PWD/*;do
