@@ -1,4 +1,6 @@
 #!/bin/bash
+#Description : Compare des nombres aléatoires pour voir si un id de processus est simmilaire.
+#Auteur : Ludwig-Emmanuel Dufour
 
 declare -a tab
 
@@ -19,6 +21,4 @@ for i in ${tab[@]}; do
         echo "$i n'est pas un processus"
 	fi
 done
-
-sleep 20
 
