@@ -1,3 +1,8 @@
+<# 
+Description : Plus de détail (nom, id, taille en mémoire centrale, nombre de threads) sur un processus passé en ligne de commande.
+Auteur : Ludwig-Emmanuel Dufour
+#> 
+
 [CmdletBinding()]
 Param(
   [Parameter(Mandatory=$true)]$demande
