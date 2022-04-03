@@ -1,4 +1,6 @@
 #!/bin/bash
+#Auteur : Ludwig-Emmanuel Dufour
+#Description : Menu offrant plusieurs choix à l'utilisateur
 
 while true; do
 echo -e "\nChoisir une option: "
