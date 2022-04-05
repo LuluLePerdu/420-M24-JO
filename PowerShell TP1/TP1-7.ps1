@@ -1,4 +1,5 @@
 <#
+Filename: TP1-7.ps1
 Description :Rrechercher dans les répertoires présent et enfants tous les fichiers avec le même nom et les indiquer dans un fichier sortie.
 Auteur : Ludwig-Emmanuel Dufour
 Variable : 
@@ -8,6 +9,7 @@ $item est la premiere occurence,
 $item2 les autres 
 $length est la longueur de l'array à traiter,
 $alrExist est si l'item est deja dans $already donc deja traiter
+Sortie: Liste des récurences de fichiers
 #> 
 
 Clear-Content .\sortie.txt
