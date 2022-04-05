@@ -1,6 +1,9 @@
 <#
-Description : Ajoute dans un array (choix), un nombre aléatoire et vérifie si un processus est lié à cette id, nous renvoie si oui ou non.
+Filename: TP1-4.ps1
+Description : Ajoute dans un tableau, un nombre aléatoire et vérifie si un processus est lié à cette id.
 Auteur : Ludwig-Emmanuel Dufour
+Variable modifiable: Choix de l'utilisateur
+Sortie: Les nombres générées et s'il sont égal à un id de processus
 #> 
 
 $choix = Read-Host -Prompt "Combien d'élements? "
@@ -23,4 +26,4 @@ foreach($elem in $tab){
         Write-Host("$elem, aucun processus n'a ce numéro")    
     }
 }
-pause
+
