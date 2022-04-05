@@ -1,9 +1,6 @@
 #!/bin/bash
-#Auteur : Ludwig-Emmanuel Dufour
-#Description : Indique le nombre le plus petit et grand, parmi les arguments reçus.
 
-#Déclaration d'un tableau tab
-tab=() 
+tab=()
 
 while read -p "Nombre à comparé? (chaîne vide pour terminer) " nombre
 
@@ -23,11 +20,13 @@ min=${tab[0]}
 for i in "${tab[@]}"
 do
     # Changer la valeur du max
+    
     if [[ "$i" -gt "$max" ]]; then
         max="$i"
     fi
 
     # Changer la valeur du min
+    
     if [[ "$i" -lt "$min" ]]; then
         min="$i"
     fi
