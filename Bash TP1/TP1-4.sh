@@ -1,8 +1,12 @@
 #!/bin/bash
+# filename: TP1-4.sh
+# Description: Regarde si des nombres aléatoires sont des id de processus
+# Arguments: Aucun
+# Auteur: Ludwig-Emmanuel Dufour
+# Variable modifiable: Le nombres de nombres aléatoires 
 
 declare -a tab
 
-#Demander un nombre
 echo "Je demande un chiffre"
 read varchiffre
 
@@ -19,6 +23,3 @@ for i in ${tab[@]}; do
         echo "$i n'est pas un processus"
 	fi
 done
-
-sleep 20
-
