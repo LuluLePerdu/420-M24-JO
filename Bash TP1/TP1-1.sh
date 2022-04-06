@@ -1,4 +1,7 @@
 #!/bin/bash
+#filename: TP1-1.sh
+#Description:
+#Auteur: Ludwig-Emmanuel Dufour
 
 tab=()
 
