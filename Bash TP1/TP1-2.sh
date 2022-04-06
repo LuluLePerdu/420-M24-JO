@@ -1,4 +1,9 @@
 #!/bin/bash
+#filename: TP1-2.sh
+#Auteur: Ludwig-Emmanuel Dufour
+#Description: Menu offrant plusieurs choix d'action
+#Arguments: Aucun
+#Variable modifiable: Choix d'action de l'utilisateur
 
 while true; do
 echo -e "\nChoisir une option: "
