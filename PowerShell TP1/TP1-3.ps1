@@ -10,13 +10,13 @@ Sortie: Les infos du processus
 
 [CmdletBinding()]
 Param(
-  [Parameter(Mandatory=$true)]$demande
+  [Parameter(Mandatory=$true)]$valeur
 )
-if ($demande -Match "^\d+$")
+if ($valeur -Match "^\d+$")
 {
-    Get-Process | Where-Object {$_.Id -eq "$demande"} | Select-Object ProcessName,Id,VM,Threads
+    Get-Process | Where-Object {$_.Id -eq "$valeur"} | Select-Object ProcessName,Id,VM,Threads
 }
 else
 {
-    Get-Process | Where-Object {$_.ProcessName -eq "$demande"} | Select-Object ProcessName,Id,VM,Threads
+    Get-Process | Where-Object {$_.ProcessName -eq "$valeur"} | Select-Object ProcessName,Id,VM,Threads
 }
