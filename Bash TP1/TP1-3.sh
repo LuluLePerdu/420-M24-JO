@@ -1,12 +1,16 @@
 #!/bin/bash
-#En bash, créer un script qui parcourt tous les fichiers txt d'un répertoire donné en argument 
-#et qui affiche les 10 premières lignes de chacun de ces fichiers de façon suivante dans le fichier entêtes.txt:
+#filename:TP1-3.sh
+#Auteur: Ludwig-Emmanuel Duofur
+#Description : Script qui parcourt tous les fichiers txt d'un répertoire donné en argument 
+#et qui affiche les 10 premières lignes de chacun de ces fichiers dans le fichier entêtes.txt:
+#Arguments: Répertoire choisie
+#Variable modifiable: i = fichier en cours
 
-    for fichier in 1*.txt
-    do  
-        echo -e "\n${fichier##*/}:" >> ./entête.txt
-        echo "">>entête.txt
-        head -10 $fichier >> ./entête.txt
-    done
-echo "Toute les 10 premières lignes ont été copiés dans entête.txt"
-sleep 4
+
+> ./entete.txt
+for i in $1/*; do
+if [[ $i =~ ".txt" ]]; then
+    echo -e "\n${i##*/}:" >> ./entete.txt
+        head -10 $i >> ./entete.txt
+fi        
+done
