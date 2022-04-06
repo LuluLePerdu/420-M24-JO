@@ -1,6 +1,9 @@
 #!/bin/bash
-#Description : Rechercher dans le répertoire présent et les enfants, les fichiers ayant le même nom et les indiquer dans un fichier sortie.
-#Auteur : Ludwig-Emmanuel Dufour
+#filename: TP1-7.sh
+#Description: Rechercher dans le répertoire présent et les enfants, les fichiers ayant le même nom et les indiquer dans un fichier sortie.
+# Arguments: Aucun
+# Auteur: Ludwig-Emmanuel Dufour
+# Variable modifiable: Aucune
 
 > sortie.txt
 for u in $PWD/*;do
