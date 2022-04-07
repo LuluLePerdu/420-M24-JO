@@ -1,7 +1,9 @@
 #!/bin/bash
 #filename: TP1-1.sh
-#Description:
+#Description: L'utilisateur rentre autant de donner qu'il soite et le minimum et maximum seront retransmis
 #Auteur: Ludwig-Emmanuel Dufour
+#Argument: aucun
+#Variable modifiable: Les nombres entrés au claviers
 
 tab=()
 
@@ -38,5 +40,3 @@ done
 echo "
 min=$min
 max=$max"
-
-sleep 5
