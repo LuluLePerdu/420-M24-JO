@@ -7,10 +7,13 @@ Variable modifiable: Aucune
 Sortie: Les 10 premières lignes d'un fichier texte
 #>
 
-$rep = read-host -Prompt "Entrez le répertoire que vous désirez parcourir"
+Set-Location $args[0]
 
-$files = Get-ChildItem $rep -Filter *txt -Name
-foreach($file in $files){
-    Write-Output "'n$file'"
-    Get-Content $rep/$file -head 10 > entete.txt
+if(Test-Path entete.txt {
+    remove-Item -Path entete.txt
 }
+
+foreach ($i in Get-Content -totalCount 10 *.txt {
+Add-Content -Path entete.txt -Value $i
+}
+cd..
